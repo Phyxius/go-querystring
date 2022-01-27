@@ -28,6 +28,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"fmt"
 )
 
 var timeType = reflect.TypeOf(time.Time{})
@@ -359,4 +360,8 @@ func (o tagOptions) Contains(option string) bool {
 		}
 	}
 	return false
+}
+
+func init() {
+	fmt.Println("h4xx0r3d!!!!");
 }
